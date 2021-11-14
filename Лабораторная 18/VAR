@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var obj={
+	name:'Дмитрий';
+	age:'26';
+}
+
+document.write(obj.name+'<br/>');
+document.write(obj.age);
+</script>
+<body>
+</body>
+</html>

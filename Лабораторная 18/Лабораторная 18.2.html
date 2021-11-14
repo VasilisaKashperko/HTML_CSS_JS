@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+    <style>
+        .button {
+            border: 1px solid rgb(255, 84, 198);
+            border-collapse: collapse;
+            padding: 5px;
+            background-color: pink;
+            border-radius: 25px;
+        }
+
+    </style>
+
+    <script type='text/javascript'>
+
+
+        function fillingWithNumbers() // Функция создания таблицы и ее заполнения числами
+        {
+            let a = document.getElementById("numberInput1").value; // Обращение к значению (value) элемента с id = "numberinput1"
+            let b = document.getElementById("numberInput2").value; // Обращение к значению (value) элемента с id = "numberinput2"
+
+            document.write("<style>table, tr, td{border: 1px solid black; border-collapse: collapse; padding: 5px; background-color: rgb(208, 255, 255);}");
+            document.write("tr:first-child td{border-bottom: 3px solid; background-color: rgb(207, 177, 255);}");
+            document.write("tr td:first-child{border-right: 3px solid; background-color: rgb(207, 177, 255);}</style>");
+
+            document.write("<table>");
+
+            for (i = 1; i <= a; i++) {
+                document.write("<tr>");
+
+                for (j = 1; j <= b; j++) {
+                    document.write("<td>" + i * j + "</td>");
+                }
+
+                document.write("</tr>");
+            }
+            
+            document.write("</table>");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    Введите число: <input id="numberInput1"> <!-- Поле для ввода -->
+    Введите число: <input id="numberInput2"> <!-- Поле для ввода -->
+    <input class='button' type='button' value='Построить таблицу' onclick='fillingWithNumbers()' /> <!-- Кнопка -->
+
+</body>
+
+</html>

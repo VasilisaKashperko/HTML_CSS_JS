@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Студенты</title>
+    <link rel="shortcut icon" href="lisa.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href = "Task2.css">
+
+    </head>         
+    <body>
+    <div class="div1" align='center'>Students</div>
+    <div align = 'center' width="100%" height="100%">
+
+        <script>
+
+            function Student(Name, Surname, Physics, Maths, Informatics){
+                this.Name=Name;
+                this.Surname=Surname;
+                this.Physics=Physics;
+                this.Maths=Maths;
+                this.Informatics=Informatics;
+
+                this.average_stud = average_stud = m => {
+                        var n = Math.round((this.Physics + this.Maths + this.Informatics) * 10 / 3) / 10;
+                        document.write(`У ${this.Name} ${this.Surname} a средний балл равен ${n}<br><br>`);
+
+                }
+            }
+
+            student1 = new Student('Bill', 'Gates', 7, 5, 10);
+            student1.average_stud(3);
+
+            student2 = new Student('Stephen', 'Howkings', 10, 10, 4);
+            student2.average_stud(3);
+
+            student3 = new Student('Steve', 'Jobs', 5, 5, 8);
+            student3.average_stud(3);
+
+            Student.prototype.year = this.year;
+            student1.year=2024;
+            student2.year=2024;
+            student3.year=2024;
+
+            document.write(`
+                <table class="table2">
+                    <tr>
+                        <td>
+                            ${student1.Name} ${student1.Surname}<br><br>
+                            Математика: ${student1.Maths}<br>
+                            Физика: ${student1.Physics}<br>
+                            Информатика: ${student1.Informatics}<br>
+                        </td>
+                        <td>
+                            ${student2.Name} ${student2.Surname}<br><br>
+                            Математика: ${student2.Maths}<br>
+                            Физика: ${student2.Physics}<br>
+                            Информатика: ${student2.Informatics}<br>
+                        </td>
+                        <td>
+                            ${student3.Name} ${student3.Surname}<br><br>
+                            Математика: ${student3.Maths}<br>
+                            Физика: ${student3.Physics}<br>
+                            Информатика: ${student3.Informatics}<br>
+                        </td>
+                    </tr>
+                </table>
+            `);
+
+        </script>
+            
+    </div>
+    <br>
+   <div align="center">
+        <table class="table1">
+            <tr>
+                <td><a href="Задание 1.html">Task1</a></td>
+                <td><a href="Задание 2.html">Task2</a></td>
+                <td><a href="Задание 3.html">Task3</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

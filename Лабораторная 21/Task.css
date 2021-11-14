@@ -1,0 +1,56 @@
+tr, td{
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    background-color: rgba(124, 133, 133, 0.671);
+    border-radius:50px;
+    color: rgb(224, 192, 224);
+}
+
+body{
+    background-color: rgb(186, 195, 196);
+    font-family:"20011";
+}
+
+@font-face{
+    font-family:"20011";/* Задаем имя шрифта */
+    src:url("20011.ttf")/* Указываем местонахождение нашего шрифта */
+}
+
+@font-face{
+    font-family:"20094";/* Задаем имя шрифта */
+    src:url("20094.ttf")/* Указываем местонахождение нашего шрифта */
+}
+
+a:link {
+color: rgb(247, 241, 160); /* не посещенной ссылки */
+}
+
+a:visited{
+    color: rgb(224, 192, 224);
+}
+
+a:hover { /* на которую наведен курсор мыши */
+color: rgb(187, 83, 156);
+}
+
+a:active {
+color: rgb(154, 215, 250);
+}
+
+.div1{
+    padding: 60px;
+    padding-bottom: 20px;
+    font-family:"20094";
+    font-size: 80px;
+    color: rgb(126, 66, 121);
+}
+
+.table2{
+    color: purple;
+    background-image: url(1.jpg);
+    border: 9px;
+    border-radius:50px;
+}

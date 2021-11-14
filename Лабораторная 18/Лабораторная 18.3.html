@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+    <style>
+        table,
+        tr,
+        td {
+            padding: 6px;
+            border-collapse: collapse;
+            border: 1px solid rgb(239, 186, 255);
+            text-align: center;
+            align-content: center;
+        }
+
+        tbody:first-child tr {
+            border: 3px solid rgb(179, 91, 238);
+        }
+    </style>
+
+    <script type='text/javascript'>
+
+        function round(x) {
+            return Math.round(x * 10) / 10;
+            
+            
+        }
+
+        function func() {
+            let str;
+
+            let a = document.getElementById("numberInput1").value; // Обращение к значению (value) элемента с id = "numberinput1"
+            let b = document.getElementById("numberInput2").value; // Обращение к значению (value) элемента с id = "numberinput2"
+
+            a = Number(a);
+            b = Number(b);
+
+            let div = document.getElementById("main");
+
+            div.innerHTML = "<table id = \"idtable\"></table>";
+
+            let table = document.getElementById("idtable");
+
+
+            table.innerHTML += "<tr><td>Радиус</td><td>Площадь круга</td><td>Длина окружности</td></tr>" // закрывает теги
+
+            do {
+                // a = a - (a%0.1) - работает не всегда
+                str = "";
+                str += "<tr>"; // Строка, хранящая ряд таблицы
+                console.log("a: " + a);
+
+                a = round(a); // Функция округления
+
+                str += "<td>" + a + "</td>";
+                str += "<td>" + round(2 * Math.PI * a) + "</td>";
+                str += "<td>" + round(Math.PI * a * a) + "</td>";
+
+                str += "</tr>"
+                table.innerHTML += str;
+                a += 0.3;
+            } while (a < b)
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    Введите число: <input id="numberInput1"> <!-- Поле для ввода -->
+    Введите число: <input id="numberInput2"> <!-- Поле для ввода -->
+    <input type='button' value='Построить таблицу' onclick='func()' />
+
+    <hr>
+
+    <div id="main"></div>
+
+</body>
+
+</html>

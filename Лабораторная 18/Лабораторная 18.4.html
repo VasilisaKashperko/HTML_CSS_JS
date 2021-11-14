@@ -1,0 +1,67 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            padding: 6px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            background: #eac4fc;
+        }
+
+        tbody:first-child tr {
+
+            border: 3px solid;
+        }
+
+        th {
+            background: #b384ff !important;
+        }
+
+        tbody:nth-child(5) tr {
+            border-bottom: 3px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="main">
+        <tr>
+            <th> Число </th>
+            <th> Метод </th>
+            <th> Результат </th>
+            <th> Описание метода </th>
+        </tr>
+    </table>
+
+
+    <script>
+
+        function func4() {
+            let a = new Number(3.1415);
+            let b = new Number(68);
+            let str = ""; // объявление пустоты
+            let table = document.getElementById("main");
+            table.innerHTML += "<tr><td>" + a + "</td><td>toExponential(2)</td><td>" + a.toExponential(2) + "</td><td>Экспонентальное представление числа c 2 цифрами после запятой</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toFixed(2)</td><td>" + a.toFixed(2) + "</td><td>Представление числа в формате с фиксированной точкой с 2 цифрами после запятой</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toPrecision(2)</td><td>" + a.toPrecision(3) + "</td><td>Округление числа до 2 цифр после запятой (с избытком)</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toString(16)</td><td>" + a.toString(16) + "</td><td>Строковое шестнадцатиричное представление числа</td></tr>";
+            table.innerHTML += "<tr><td>" + b + "</td><td>toExponential(2)</td><td>" + b.toExponential(2) + "</td><td>Экспонентальное представление числа c 2 цифрами после запятой</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toFixed(2)</td><td>" + b.toFixed(2) + "</td><td>Представление числа в формате с фиксированной точкой с 2 цифрами после запятой</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toPrecision(2)</td><td>" + b.toPrecision(3) + "</td><td>Округление числа до 2 цифр после запятой (с избытком)</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toString(16)</td><td>" + b.toString(16) + "</td><td>Строковое шестнадцатиричное представление числа</td></tr>";
+
+        }
+
+        func4();
+
+    </script>
+
+</body>
+
+</html>

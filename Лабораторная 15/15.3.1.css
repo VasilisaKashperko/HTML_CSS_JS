@@ -1,0 +1,65 @@
+body { 
+    background-image: url(fon.jpg); /* Путь к фоновому изображению */
+    font-family:"20011";
+    background-color: #CD853F; /* Цвет фона */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
+
+    @font-face
+    {font-family:"20011";/* Задаем имя шрифта */
+	src:url("20011.woff")/* Указываем местонахождение нашего шрифта */
+	}
+	@font-face
+    {font-family:"18963";/* Задаем имя шрифта */
+	src:url("18963.woff")/* Указываем местонахождение нашего шрифта */
+	}
+
+a:link {
+    color: #ff4500; /* не посещенной ссылки */
+   }
+	a:visited{
+	color: #ff4500;
+	}
+	a:hover { /* на которую наведен курсор мыши */
+	color: black;
+	}
+	a:active {
+		color: #a0522d;
+	}
+
+	#table
+    {    
+    margin-left:100px;
+    margin-right:100px;
+    padding: 5px;
+    color:#ff4500;
+    background-color: black;
+    text-align: center;
+    }
+
+    td{
+        transition-property: background-color, color;
+        transition-duration: 2s;
+    }
+    td:hover {
+    background-color:#ff4500;
+    color:black;
+    }
+     #img1
+    {    
+        transform: translate(80px,100px); /*Сдвигает элемент на новое место, перемещая относительно обычного положения вправо и вниз, используя координаты X и Y, не затрагивая при этом соседние элементы.*/
+    }
+    #img2
+    {    
+        transform:rotate(45deg); /*перемещает элемент вокруг неподвижной точки*/
+    }
+    #img3
+    {    
+        transform:scale(-1, 1); /*Масштабирует элемент в двумерном пространстве по горизонтали и вертикали или одновременно в двух направлениях*/
+    }
+    #img4
+    {    
+        transform:skew(25deg, 10deg); /*трансформирует элемент, наклоняя его в 2D-пространстве, как бы вытягивая*/
+    }

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Сайт лисицы</title>
+    <link rel="shortcut icon" href="lisa.ico" type="image/x-icon">
+
+<style type='text/css'>
+	body{ 
+        background-image: url(fon.jpg); /* Путь к фоновому изображению */
+        font-family:"20011";
+        background-color: #CD853F; /* Цвет фона */
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    @font-face
+    {   font-family:"20011";/* Задаем имя шрифта */
+	    src:url("20011.woff")/* Указываем местонахождение нашего шрифта */
+	}
+	@font-face
+    {   font-family:"18963";/* Задаем имя шрифта */
+	    src:url("18963.woff")/* Указываем местонахождение нашего шрифта */
+	}
+
+    a:link {
+        color: #ff4500; /* не посещенной ссылки */
+   }
+	a:visited{
+	    color: #ff4500;
+        border-color: #ff4500;
+	}
+	a:hover { /* на которую наведен курсор мыши */
+    	color: black;
+	}
+	a:active {
+        color: #a0522d;
+	}
+
+	#table
+    {    
+        margin-left:10px;
+        margin-right:10px;
+        padding: 0px;
+        color:#000000;
+        background-color: black;
+        text-align: center;
+        align-content: center;
+    }
+
+    div{
+        align-content:center;
+    }
+
+    .small{
+        background-color: rgb(0, 0, 0);
+        transition-property: background-color, color, border-color;
+        transition-duration: 2s;
+        color:#ff4500;
+        border-color: #000000;
+        font-family:"20011";
+        background-color: rgb(0, 0, 0);
+        padding: 14px;
+        border-radius:50px 0px 50px 0px;
+    }
+    .small:hover {
+        background-color:#ff4500;
+        color:black;
+        border-color: #ff4500;
+    }
+    
+
+	#par1
+    {    
+        margin-left:100px;
+        margin-right:100px;
+        padding: 15px;
+        color:#ff4500;
+        box-shadow:0 0 1px 0 black;/*<сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
+        opacity: 0.2; /* Полупрозрачный */
+        text-align: center;
+        /* HSLA-значение */
+        /*background-color: hsla(50, 33%, 25%, 0.75);*/
+        /* RGBA-значение или RGB с alpha-каналом */
+        background-color: rgba(0, 0, 0, 0.6); /* 1.0 - непрозрачный */
+        transition-property: opacity;
+        transition-duration: 2s;
+    }
+
+    #par1:hover {
+        opacity:1.0;
+    }
+
+    #par2
+    {    
+        padding: 15px;
+        color:#ff4500;
+        background-color: black;
+        text-align: center;
+    }
+
+    .par01
+    {   
+        background-color: black;
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+        border-radius: 50px 50px 50px 50px; /*px – абсолютные, чёткие, понятные, не зависящие ни от чего. em – относительно размера шрифта. */
+        color:#ff4500;
+    }
+
+    .par7
+    {    
+        padding: 15px;
+        color:#ff4500;
+        background-color: black;
+        text-align: center;
+        align-content:center;
+    }
+
+    #par3
+    {    
+        margin-left:200px;
+        margin-right:200px;
+        padding: 15px;
+        border-radius: 50px 50px 50px 50px; /*px – абсолютные, чёткие, понятные, не зависящие ни от чего. em – относительно размера шрифта. */
+        color:#ff4500;
+        opacity: 0.75; /* Полупрозрачный фон */
+        background-color: black;
+        text-align: center;
+        font-family:"18963";
+        font-size: 30px;
+    }
+
+	#par4
+    {
+        margin-left:250px;
+        margin-right:250px;
+        padding: 10px;
+        padding-left: 70px;
+        border-radius: 50px 50px 50px 50px; /*px – абсолютные, чёткие, понятные, не зависящие ни от чего. em – относительно размера шрифта. */
+        color:#ff4500;
+        opacity: 0.7; /* Полупрозрачный фон */
+        background-color: black;
+        text-align: center;
+        font-family:"18963";
+        font-size: 15px;
+        transition-property: letter-spacing, padding-left;
+        letter-spacing:-16px;
+        transition-duration: 3s;
+    }
+
+    #par5
+    {    
+        padding: 15px;
+        color:#ff4500;
+        text-align: center;
+    }
+
+    .par0
+    {    
+        padding: 15px;
+        border-radius: 50px 50px 50px 50px; /*px – абсолютные, чёткие, понятные, не зависящие ни от чего. em – относительно размера шрифта. */
+        color:#ff4500;
+        opacity:0.85; /* Полупрозрачный фон */
+        background-color: black;
+        text-align: center;
+        font-family:"18963";
+        font-size: 20px;
+        border-color: rgba(0, 0, 0, 0.6);
+        align-content:center;
+    }
+
+    #par4:hover {
+        letter-spacing: 13px;
+        padding-left: 10px;
+    }
+
+     #img1
+    {    
+        transform: translate(5,5);
+    }
+
+        #spec{
+        background-color: black;
+        width: 100px;
+        transition-property: background-color, color;
+        transition-duration: 2s;
+    }
+    #spec:hover {
+        background-color:#ff4500;
+        color:black;
+    }
+
+</style>
+
+<script type='text/javascript' src="Лабораторная 18.1.js"></script>
+
+</head>
+<body>
+	<div id='table'>
+		<table width=100% align = center>
+			<tr>
+				<td><input type='button' value='Задание 1' class=small onclick='firstTask()' /></td>
+				<td><input type='button' value='Задание 2' class=small onclick='secondTask()' /></td>
+				<td><input type='button' value='Задание 3' class=small onclick='thirdTask()' /></td>
+				<td><input type='button' value='Задание 4' class=small onclick='fourthTask()' /></td>
+                <td><input type='button' value='Задание 5' class=small onclick='fifthTask()' /></td>
+                <td><input type='button' value='Задание 6' class=small onclick='sixthTask()' /></td>
+                <td><input type='button' value='Задание 7' class=small onclick='seventhTask()' /></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id='par1'>
+        <img src='lisa.png' id='img1' width = 400px align="center" vspace="2" hspace="2">
+	</div>
+
+	<div id='par2'>
+	    Привет, мой дорогой друг! В ниже ты можешь получить таблицу умножения:
+	</div>
+
+	    <br>
+        <br>
+
+    <div id='par5'>
+        <span class='par0'>Введи число:</span> <input class=small id="numberInput1"> <!-- Поле для ввода -->
+        <span class='par0'>Введи число:</span> <input class=small id="numberInput2"> <!-- Поле для ввода -->
+            <br>
+            <br>
+        <input class='par0' type='button' value='Построить таблицу' onclick='fillingWithNumbers()' /> <!-- Кнопка -->
+    </div>
+
+        <br>
+        <br>
+
+    <div id='par2'>
+        А здесь можно узнать площадь круга:
+    </div>
+
+        <br>
+        <br>
+
+    <div id='par5'>
+        <span class='par0'>Введи число:</span><input class=small id="numberInput3"> <!-- Поле для ввода -->
+        <span class='par0'>Введи число:</span><input class=small id="numberInput4"> <!-- Поле для ввода -->
+        <br>
+        <br>
+        <input type='button' class='par0' value='Построить таблицу' onclick='func()'/>
+
+            <div id="main"></div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div id='par2'>
+        Это четвертое задание:
+    </div>
+    
+    <br>
+    <br>
+
+    <table id="main4" class="par01">
+        <tr>
+            <th> Число </th>
+            <th> Метод </th>
+            <th> Результат </th>
+            <th> Описание метода </th>
+        </tr>
+    </table>
+
+    <script>
+
+        function func4() {
+            let a = new Number(3.1415);
+            let b = new Number(44);
+            let str = ""; // объявление пустоты
+            let table = document.getElementById("main4");
+            table.innerHTML += "<tr><td>" + a + "</td><td>toExponential(2)</td><td>" + a.toExponential(2) + "</td><td>Экспонентальное представление числа c 2 цифрами после запятой</td></tr>";
+            //представляет число в экспоненциальной форме, параметр количество – целое число, определяющее, сколько цифр после точки следует указывать
+            
+            table.innerHTML += "<tr><td>" + "</td><td>toFixed(2)</td><td>" + a.toFixed(2) + "</td><td>Представление числа в формате с фиксированной точкой с 2 цифрами после запятой</td></tr>";
+            //представляет число в форме с фиксированным количеством цифр по-сле точки, параметр количество – целое число, определяющее, сколь-ко цифр после точки следует указывать.
+            
+            table.innerHTML += "<tr><td>" + "</td><td>toPrecision(2)</td><td>" + a.toPrecision(3) + "</td><td>Округление числа до 2 цифр после запятой (с избытком)</td></tr>";
+            //представляет число с заданным общим количеством значащих цифр. Параметр точность – целое число, определяющее, сколько всего цифр, до и после точки, следует указывать.
+            
+            table.innerHTML += "<tr><td>" + "</td><td>toString(16)</td><td>" + a.toString(16) + "</td><td>Строковое шестнадцатиричное представление числа</td></tr>";
+            //возвращает строковое представление числа в системе счисления с ука-занным основанием. Если параметр не указан, имеется в виду десяте-ричная система счисления. Этот метод имеют все объекты.
+            
+            table.innerHTML += "<tr><td>" + b + "</td><td>toExponential(2)</td><td>" + b.toExponential(2) + "</td><td>Экспонентальное представление числа c 2 цифрами после запятой</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toFixed(2)</td><td>" + b.toFixed(2) + "</td><td>Представление числа в формате с фиксированной точкой с 2 цифрами после запятой</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toPrecision(2)</td><td>" + b.toPrecision(3) + "</td><td>Округление числа до 2 цифр после запятой (с избытком)</td></tr>";
+            table.innerHTML += "<tr><td>" + "</td><td>toString(16)</td><td>" + b.toString(16) + "</td><td>Строковое шестнадцатиричное представление числа</td></tr>";
+        }
+
+        func4();
+
+    </script>
+
+    <br>
+
+    <div id='par3'>
+	Лисица рада тебя видеть...
+	</div>
+
+    <div id='par4'>
+        А ты её нет?
+    </div>
+
+</body>
+</html>

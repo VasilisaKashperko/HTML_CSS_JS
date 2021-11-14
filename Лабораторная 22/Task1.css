@@ -1,0 +1,236 @@
+body{
+    background-image: url(Кокосы2.jpg);
+    background-attachment: fixed;
+    background-repeat:repeat-y;
+    background-size:100%;
+    font-family:"20094";
+}
+
+@font-face{
+    font-family:"20011";/* Задаем имя шрифта */
+    src:url("20011.ttf")/* Указываем местонахождение нашего шрифта */
+}
+
+@font-face{
+    font-family:"20094";/* Задаем имя шрифта */
+    src:url("20094.ttf")/* Указываем местонахождение нашего шрифта */
+}
+
+.btn {
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 17px 39px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    text-transform: uppercase;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+    color:white;
+    font-family:"20094";
+}
+
+.btnSmaller {
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 17px 29px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    text-transform: uppercase;
+    background-color:white;
+    color:#8f5305;
+    animation-name: color, background-color;
+    transition-duration: 1s;
+    font-family:"20094";
+}
+
+.btn-1{
+    background: #5c3401;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    background: -webkit-linear-gradient(-45deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8c1', endColorstr='#0599b1',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+
+    animation: AnimationName 4s ease infinite;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+
+    animation: AnimationName 4s ease infinite;
+    border: medium none;
+}
+
+.btn-2{
+    background: #5c3502;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    background: -webkit-linear-gradient(-45deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#797b7f', endColorstr='#828589',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    border: medium none;
+}
+
+.btn-3{
+    background: #5c3502;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    background: -webkit-linear-gradient(-45deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5c3502 0%, #814f0e  50%, #d3b48c  51%, #814f0e 71%, #5c3502  100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91188', endColorstr='#e91188',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+
+    animation: AnimationName 4s ease infinite;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+
+    animation: AnimationName 4s ease infinite;
+    border: medium none;
+    color:#ffffff;
+}
+
+.btnSmaller:hover {
+    background-color:#965705;
+    color:rgb(255, 255, 255);
+}
+
+@-webkit-keyframes AnimationName {
+    0%{
+    background-position:0% 31%
+    }
+    50%{
+    background-position:100% 70%
+    }
+    100%{
+    background-position:0% 31%
+    }
+}
+@-moz-keyframes AnimationName {
+    0%{
+    background-position:0% 31%
+    }
+    50%{
+    background-position:100% 70%
+    }
+    100%{
+    background-position:0% 31%
+    }
+}
+@keyframes AnimationName {
+    0%{
+    background-position:0% 31%
+    }
+    50%{
+    background-position:100% 70%
+    }
+    100%{
+    background-position:0% 31%
+    }
+}
+
+.my-flex-container{
+    display: flex;
+    /*следующие свойста должны применяться непосредственно к контейнеру, а не к дочерним элементам*/
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family:"20094";
+}
+
+.my-flex-container1{
+    display: flex;
+    /*следующие свойста должны применяться непосредственно к контейнеру, а не к дочерним элементам*/
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family:"20094";
+    width:30%;
+}
+
+.aside{
+    display:inline-flex;
+    justify-content:center;
+}
+
+.new{
+    position:absolute;
+    bottom: 20px;
+    right:10px;
+    width:750px;
+}
+
+table{
+    background-color:rgba(255, 255, 240, 0.349);
+    border-radius:10px;
+    height:250px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+tr,th{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 240, 0.26);
+    border-radius:10px;
+    color: #502e02;
+}
+
+td{
+    padding: 4px;
+    border-radius:10px;
+}
+
+.vaside{
+    display:inline-flex;
+    justify-content:center;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.baside{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.input{
+    border-radius:30px;
+    height:40px;
+    text-align: center;
+}
+
+span{
+    font-size: 25px;
+    background-color: rgba(255, 255, 240, 0.541);
+    border-radius:50px;
+    color: #502e02;
+}
+
+.span1{
+    font-size: 18px;
+    margin-left: 50px;
+}

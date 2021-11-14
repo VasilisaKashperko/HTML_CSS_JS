@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Студенты</title>
+    <link rel="shortcut icon" href="lisa.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href = "Task3.css">
+
+    </head>         
+    <body>
+    <div class="div1" align='center'>Students</div>
+    <div align = 'center' width="100%" height="100%">
+
+        <script>
+
+            A = new Array();
+                A[0] = 6 * Math.PI * Math.PI + 3 * Math.exp(8);
+                A[1] = 2 * Math.cos(4) + Math.cos(12) + 8 * Math.exp(3);
+                A[2] = 3 * Math.sin(9) + Math.log(5) + Math.sqrt(3);
+                A[3] = 2 * Math.tan(5) + 6 * Math.PI + Math.sqrt(12);
+
+
+        document.write(`<table class="table2">
+            <tr>
+                <td rowspan="4">`);
+
+                    var i=0;
+                    while (i<=3) {
+                    document.write (`${A[i]}<br>`);
+                    i++;
+                    }
+
+                    document.write(`<br>`);
+                    delete A[3]; //Удалить из массива элемент с номером 3, вывести исходный массив и полученный.
+                    
+                    var n=0;
+                    while (n<=3) {
+                    document.write (`${A[n]}<br>`);
+                    n++;
+                    }
+
+        document.write(`</td></tr><tr><td>`);
+
+                    function Group(number, spec, amount){
+                        this.number=number;
+                        this.spec=spec;
+                        this.amount=amount;
+                    }
+
+                    gr1=new Group(2, 'ИСиТ', 28);
+
+                    document.write(`In:<br>`);
+                    document.write('spec' in gr1); // проверить, есть ли свойство spec у объекта gr1;
+                    document.write('<br>');
+                    document.write(1 in A); //оператор проверяет, есть ли элемент с номером 1 в массиве.
+
+        document.write(`</td></tr><tr><td>`);
+
+                    document.write('Instanceof:<br>');
+                    //Проверить, являются ли созданные объекты объектами Array, String, Object
+                    document.write(A instanceof Array);document.write('<br>');
+                    document.write(A instanceof String);document.write('<br>');
+                    document.write(Group instanceof Object);document.write('<br>');
+
+                    bird = () => {
+                        var numb = 5;
+                        return numd;
+                    }
+            
+        document.write(`</td></tr><tr><td>`);
+
+                    //Узнать тип всех созданных ранее объектов, включая функцию
+                    document.write('Typeof:<br>');
+                    document.write(typeof gr1.spec);document.write('<br>');
+                    document.write(typeof bird);document.write('<br>');
+                    document.write(typeof Group);document.write('<br>');
+
+        document.write(`</td></tr></table>`);
+        </script>
+            
+    </div>
+    <br>
+    <div align="center">
+        <table class="table1">
+            <tr>
+                <td><a href="Задание 1.html">Task1</a></td>
+                <td><a href="Задание 2.html">Task2</a></td>
+                <td><a href="Задание 3.html">Task3</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

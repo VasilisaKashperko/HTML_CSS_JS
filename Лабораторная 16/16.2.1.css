@@ -1,0 +1,57 @@
+body{ 
+    background-image: url(1.jpg); /* Путь к фоновому изображению */
+    font-family:"18963";
+    background-color: #CD853F; /* Цвет фона */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    }
+
+@font-face
+    {font-family:"18963";/* Задаем имя шрифта */
+	src:url("18963.woff")/* Указываем местонахождение нашего шрифта */
+	}
+
+#div1{
+	text-align: center;
+	color:white;
+	letter-spacing: 9px;
+
+	position: fixed;
+    top: 47%;
+    left: 37%;
+
+    opacity: 0;
+
+    animation-name: textdiv;
+    animation-delay:7s;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+
+
+    #img
+    {   transform: translate(-120px,280px);
+    	animation-delay:4s;
+        animation-duration: 10s;
+        animation-name: rotation, anim;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotation {
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes anim {
+	0% {margin-right: 0px; margin-top:280px;}
+	100% {margin-left: 1490px; margin-top:280px;}
+	}
+
+
+	@-webkit-keyframes textdiv {
+	0% {opacity: 0;}
+	60% {opacity: 1;}
+	}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма</title>
+    <link rel="stylesheet" type="text/css" href = "main.css">
+    <script type='text/javascript' src="Лабораторная 23.1.js"></script>
+
+</head>
+<body>
+    <div class="divmain" align="center">
+    <p class='divfac' align='center'>Получение сертификата</p>
+    <form name='students' align="left">
+            <br><legend>Данные о форме</legend><!--желаемое заглавие-->
+            <textarea name='naming' value='Сертификат'>Сертификат</textarea> <br/> <!--позволяет ввести многострочный текст.-->
+            
+            Ваше имя: <br/> <input type='text' id="Input2" name='firstname'/> <br/> <!--name - параметр-->
+            <!--определяет однострочное текстовое поле, в которое пользователь мо-жет вводить различную информацию-->
+            Ваша фамилия:<br/> <input type='text' id="Input1" name='lastname'/> <br/><br/>
+
+            <!--Список <select> создает выпадающий списков, элементы которого определяются с помощью тэга <option>.-->
+            <br>Свободный день недели: <select name='day'>
+                    <option value="понедельник">Понедельник </option>
+                    <option value="вторник">Вторник </option>
+                    <option value="среду">Среда </option>
+                    <option value="четверг">Четверг </option>
+                    <option value="пятницу">Пятница </option>
+                    <option value="субботу">Суббота </option>
+                    <option value="воскресенье">Воскресенье </option>
+                </select>
+            
+            <!--позволяет выбрать только один пункт с предварительно заполненной информацией из группы-->
+            <br/>Количество процедур:<br/>
+                <input type='radio' name='course' value='1' /> 
+                1
+                <input type='radio' name='course' value='2' /> 
+                2
+                <input type='radio' name='course' value='3' /> 
+                3 
+                <input type='radio' name='course' value='4' /> 
+                4 
+            
+            <!--позволяет пользователям выбирать несколько пунктов с предвари-тельно заполненной информацией из группы-->
+            <br/><br/>Процедуры:<br/>
+                <input type='checkbox' name='disiplines1' value='Шоколадное обертывание'/> 
+                Шоколадное обертывание
+                <input type='checkbox' name='disiplines2' value='Стоун-терапия'/> 
+                Стоун-терапия
+                <input type='checkbox' name='disiplines3' value='Пилинг тела'/> 
+                Пилинг тела<br>
+                <input type='checkbox' name='disiplines4' value='Лечебная ванна'/> 
+                Лечебная ванна
+                <input type='checkbox' name='disiplines5' value='Фитобочка'/>
+                Фитобочка
+
+            <p align='center'><input type="submit" class='button' form–action=""/>
+            <!--Form-action - Адрес, на который будут пересылаться данные формы. Если данный атрибут отсутствует, данные будут отправлены на текущую страницу-->
+            <!--предназначена дл отправления на сервер введенных данных-->
+            
+            <input type="reset" class='button'/>
+            
+            <br/><br/><button onclick="window.print()" class='button'>Печать пустой формы</button>
+            <br/><br/><button onclick="printy()" class='button'>Печать результатов</button><br>
+            <button onclick="funform2()" class='button'>Форма 2</button></p><br>
+    </form>    
+</div>                    
+</body>
+</html>

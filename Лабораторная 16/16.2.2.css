@@ -1,0 +1,43 @@
+body{ 
+    background-image: url(2.jpg); /* Путь к фоновому изображению */
+    font-family:"18963";
+    background-color: #CD853F; /* Цвет фона */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    }
+
+
+div{
+    width: 100px;
+}
+
+    #img1
+    {   animation-duration: 10s;
+        animation-name: anim1;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+        #img2
+    {   animation-duration: 15s;
+        animation-name: anim2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+	@-webkit-keyframes anim1 {
+    0% {margin-left: 400px; margin-top:0px;opacity: 0;}
+    25% {margin-left: 350px; margin-top:50px;opacity: 1;}
+    50% {margin-left: 450px; margin-top:160px;}
+    75% {margin-left: 320px; margin-top:230px;}
+    100% {margin-left: 440px; margin-top:300px;opacity: 0;}
+	}
+
+        @-webkit-keyframes anim2 {
+    0% {margin-left: 1000px; margin-top:0px; opacity: 0;}
+    25% {margin-left: 1050px; margin-top:60px; opacity: 1;}
+    50% {margin-left: 940px; margin-top:150px;}
+    75% {margin-left: 1010px; margin-top:200px;}
+    100% {margin-left: 960px; margin-top:250px;opacity: 0;}
+    }

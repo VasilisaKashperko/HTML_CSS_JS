@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(229, 238, 217);
+}
+
+.divmain{
+    align-content: center;
+    align-self: center;
+}
+
+form{
+    font-family:"20011";
+    width:900px;
+    background-image: url(5.jpg);
+    background-size:cover;
+    border-radius:50px;
+    padding-left: 30px;
+}
+
+@font-face{
+    font-family:"21";/* Задаем имя шрифта */
+    src:url("21.ttf")/* Указываем местонахождение нашего шрифта */
+}
+
+@font-face
+{font-family:"20011";/* Задаем имя шрифта */
+src:url("20011.woff")/* Указываем местонахождение нашего шрифта */
+}
+
+.divfac{
+    font-family:"20011";
+    font-size: 65px;
+    padding-bottom: 0px;
+    color:rgb(32, 73, 41);
+}
+
+.button{
+    border-radius: 30px;
+}

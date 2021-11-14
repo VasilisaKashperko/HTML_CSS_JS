@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Студенты</title>
+    <link rel="shortcut icon" href="lisa.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href = "Task3.css">
+
+    </head>         
+    <body>
+    <div class="div1" align='center'>Students</div>
+    <div align = 'center' width="100%" height="100%">
+
+        <button id="callfunc1" class="small"> Выполнить функцию </button>
+        <p><span id="span1"> span1 </span></p>
+        <hr>
+        
+        <table id="tableid">
+            <tr>
+                <td>ФИО</td>
+                <td colspan=3> Кашперко Василиса Сергеевна </td>
+            </tr>
+            <tr>
+                <td>Фото</td>
+                <td colspan=3> Адрес: Belarus, Minsk City </td>
+            </tr>
+            <tr>
+                <td rowspan=6>1 семестр<br>2019/2020 года</td>
+            </tr>
+            <tr>
+                <td> Белодед </td>
+                <td> ОАиП </td>
+                <td> 10 </td>
+            </tr>
+            <tr>
+                <td> Жиляк Н.А. </td>
+                <td> ОИТ </td>
+                <td> 9 </td>
+            </tr>
+            <tr>
+                <td> Гринюк </td>
+                <td> АЛОЦВМ </td>
+                <td> 8 </td>
+            </tr>
+            <tr>
+                <td> Асмыкович </td>
+                <td> Математика </td>
+                <td> 8 </td>
+            </tr>
+            <tr>
+                <td> Тульев </td>
+                <td> Физика </td>
+                <td> 8 </td>
+            </tr>
+        </table>
+        
+        <span> Средний балл: </span>
+        
+        <hr>
+        
+        <div id="outputid"></div>
+        
+        
+        
+        <script> // innerHTML - для динамического изменения содержания страницы
+        //Cвойство innerHTML содержит весь HTML-код внутри узла, и его можно менять.
+        //Свойство innerHTML применяется, в основном, для динамического изменения содержания страницы, например:
+
+            function func() {
+                let i = 0;
+        
+                if (!!"0" === true)
+                    document.getElementById("outputid").innerHTML = ("<h3> Все элементы </h3>") // task1
+        
+                for (let a of Array.from(document.all)) {
+                    i++;
+                    document.getElementById("outputid").innerHTML += a + " ";
+                    document.getElementById("outputid").innerHTML += i + "<br>";
+                }
+                //document.getElementById("outputid").innerHTML += document.getElementsByTagName("*");
+        
+                document.getElementById("outputid").innerHTML += "<br><hr><h3> Дочерние элементы body</h3>"; // task2
+                i = 0;
+                for (let a of Array.from(document.body.childNodes)) {
+                    i++;
+                    document.getElementById("outputid").innerHTML += a + " ";
+                    document.getElementById("outputid").innerHTML += i + "<br>";
+                }
+        
+                document.getElementById("outputid").innerHTML += "<hr><h3> span </hr>"; // task3
+        
+                document.getElementById("outputid").innerHTML += document.querySelectorAll("span")[0].innerHTML + "<br>"; //возвращает первый элемент, являющийся потомком элемента
+        
+                document.getElementById("outputid").innerHTML += document.getElementById("span1").innerHTML + "<br>"; //через идентификатор элемента 
+        
+        
+        
+            }
+            let avg = 0, td;
+            for (i = 3; i <= 7; i++) {
+                td = document.getElementsByTagName("tr")[i].getElementsByTagName("td")[2].innerHTML;
+                avg += Number(td);
+                console.log(avg);
+            }
+        
+            avg /= 5;
+        
+            document.querySelectorAll("span")[1].innerHTML += avg;
+        
+            console.log(avg);
+        
+            document.getElementById("callfunc1").addEventListener("click", func); // Вызов функции func() по нажатию кнопки с id = "callfunc1"
+        
+        
+        
+        </script>
+           <div align="center">
+            <table class="table1">
+                <tr>
+                    <td><a href="Задание 1-2.html">Task 1-2</a></td>
+                    <td><a href="Задание 3-4.html">Task 3-4</a></td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>

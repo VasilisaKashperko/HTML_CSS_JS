@@ -1,0 +1,40 @@
+#divspisok{
+    background-color: pink;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+ol {
+list-style-type: none; /* Убираем маркеры */
+}
+
+#spisok1,#spisok2,#spisok3,#spisok4,#spisok5{
+    display: none;
+}
+
+#drop1, #drop2,#drop3,#drop4,#drop5{
+    display: none;
+    text-align: left;
+
+}
+
+#divspisok:hover #spisok1,#spisok2,#spisok3,#spisok5,#spisok6{
+    display: block;
+}
+
+    #spisok2:hover #drop1{
+    display: block;
+    }
+    #spisok3:hover #drop2{
+    display: block;
+    }
+    #spisok4:hover #drop3{
+    display: block;
+    }
+    #spisok5:hover #drop4{
+    display: block;
+    }
+    #spisok6:hover #drop5{
+    display: block;
+    }

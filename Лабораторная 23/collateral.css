@@ -1,0 +1,48 @@
+.divi{
+    background-image: url(3.jpg);
+    background-size:cover;
+    /*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+    width: 210mm;
+    height: 297mm;
+}
+
+@font-face{
+    font-family:"21";/* Задаем имя шрифта */
+    src:url("21.ttf")/* Указываем местонахождение нашего шрифта */
+}
+
+@font-face
+{font-family:"20011";/* Задаем имя шрифта */
+src:url("20011.woff")/* Указываем местонахождение нашего шрифта */
+}
+
+.divfac{
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    align-content: center;
+    font-family:"21";
+    font-size: 100px;
+    color:rgb(160, 39, 85);
+}
+
+.divinf{
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: center;
+    font-family:"20011";
+    font-size: 30px;
+    color:rgb(160, 39, 85);
+}
+
+.tab { margin-left: 40px; }
+
+ul{
+    padding-left: 250px;
+}
+
+.dimg{
+    padding-top: 10px;
+    padding-left: 540px;
+}

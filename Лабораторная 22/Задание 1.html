@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window</title>
+    <link rel="shortcut icon" href="coconut.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href = "Task1.css">
+    <script type='text/javascript' src="Task1.js"></script>
+
+</head>         
+<body>
+
+    <div class="aside">
+        <div>
+            <table>
+                <th colspan="4">Примеры поиска</th>
+                <tr>
+                    <td>Информация о браузере</td>
+                    <td>Версия браузера</td>
+                    <td>Название браузера</td>
+                    <td>Кодовое название браузера</td>
+                </tr>
+                <tr>
+                    <td>ОС</td>
+                    <td>Java в браузере</td>
+                    <td>Ширина и высота экрана</td>
+                    <td>Глубина цвета</td>
+                </tr>
+                <tr>
+                    <td>Посещенные URL</td>
+                    <td>Текущий URL</td>
+                    <td>Путь к документу</td>
+                    <td>Имя домена</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="vaside">
+            <div><br><br><br><span>О чем вы хотите узнать информацию?</span><br><br><span class="span1"> (Введите один из примеров из таблицы) </span><br><br><br><br>
+                <br><br><br><input id="Input1" class="input"> <!-- Поле для ввода -->
+            <input type='button' class="btn btn-1" value='Посмотреть' onclick='func()'/></div>
+        </div>
+    </div>
+
+        <div class="new">
+            <div class="my-flex-container">
+                <div><input type='button' class='btn btn-1' value='Открыть окно 1' onclick='winOpen1()'/> <!--событие, вызывающее функцию--></div>
+                <div><input type='button' class='btn btn-2' value='Открыть окно 2' onclick='winOpen2()'/></div>
+                <div><input type='button' class='btn btn-3' value='Открыть окно 3' onclick='winOpen3()'/></div>
+            </div>
+            
+            <div class="my-flex-container">
+                <div><img src="wing.png" width="60px"></div>
+                <div><img src="wing.png" width="60px"></div>
+                <div><img src="wing.png" width="60px"></div>
+            </div>
+
+            <div class="my-flex-container">
+                <input type='button' class='btnSmaller' value='Закрыть окно 1' onclick='winClose1()'/>
+                <input type='button' class='btnSmaller' value='Закрыть окно 2' onclick='winClose2()'/>
+                <input type='button' class='btnSmaller' value='Закрыть окно 3' onclick='winClose3()'/>
+            </div>
+
+            <div class="my-flex-container">
+                <div><img src="wing.png" width="60px"></div>
+                <div><img src="wing.png" width="60px"></div>
+                <div><img src="wing.png" width="60px"></div>
+            </div>
+
+            <div class="my-flex-container">
+                <input type='button' class='btnSmaller' value='Добавить текст' onclick='addText1()'/>
+                <input type='button' class='btnSmaller' value='Добавить текст' onclick='addText2()'/>
+                <input type='button' class='btnSmaller' value='Добавить текст' onclick='addText3()'/>
+            </div>
+        </div>    
+    </body>
+</html>

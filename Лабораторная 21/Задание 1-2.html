@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Студенты</title>
+    <link rel="shortcut icon" href="lisa.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href = "Task.css">
+    </head>         
+    <body>
+    <div class="div1" align='center'>Students</div>
+    <div align = 'center' width="100%" height="100%">
+
+        <script>
+        //DOM (Объектная модель документа) – представление документа в виде дерева тегов.
+            function Group(number, spec, amount){   //Конструктор объектов - это шаблон, на основе которого создаются объекты.
+                this.number=number;
+                this.spec=spec;
+                this.amount=amount;
+
+                // стрелочные функции
+                // СФ не имеют своего this, внутри такой функции только тот, что и снаружи
+                this.sub_stud = sub_stud = k => { 
+                        this.amount-=k;
+                        document.write(`Из группы ${this.number} ${this.spec} забрали документы ${k} студентов.<br>`);
+                }
+
+                this.add_stud = add_stud = r => {
+                    this.amount+=r;
+                    document.write(`В группу ${this.number} ${this.spec} восстановилось ${r} студентов.<br><br>`);}
+                }
+
+            group1 = new Group(1, 'ИСиТ', 30); 
+            // оператор new обязательно должен присутствовать при создании экземпляра объекта.
+            group1.sub_stud(2);
+            group1.add_stud(4);
+
+            group2 = new Group(2, 'ИСиТ', 29);
+            group2.sub_stud(8);
+            group2.add_stud(2);
+
+            group3 = new Group(3, 'ИСиТ', 31);
+            group3.sub_stud(12);
+            group3.add_stud(7);
+
+            group4 = new Group(4, 'ПОиТ', 30);
+            group4.sub_stud(14);
+            group4.add_stud(11);
+
+            Group.prototype.year = this.year;
+            group1.year=2024;
+            group2.year=2024;
+            group3.year=2024;
+            group4.year=2024;
+
+            document.write(`
+                <table class="table2">
+                    <tr>
+                        <td align="center">
+                                        Текущее количество студентов по группам:<br>
+                                        ${group1.number} ${group1.spec} ${group1.amount} ${group1.year} <br>
+                                        ${group2.number} ${group2.spec} ${group2.amount} ${group2.year} <br>
+                                        ${group3.number} ${group3.spec} ${group3.amount} ${group3.year} <br>
+                                        ${group4.number} ${group4.spec} ${group4.amount} ${group4.year}
+                        </td>
+                </tr>
+            </table>
+            `);
+
+        document.write("<hr>");
+        var i = 0;
+
+        function task1() {
+            for (i = 0; i < (document.all.length); i++) // перебираем коллекцию all
+            {
+                document.write( `Тег: ${document.all[i].tagName}, номер: ${i};`);
+            }
+        }
+        task1();
+
+        function task2() {
+            document.write("<br><br>")  
+            for (i = 0; i < (document.body.children.length); i++) // перебираем все дочерние элементы коллекции body
+            {
+                let child = document.body.children[i]; //объект, свойство, body объект для children (массив)
+                document.write(`Тег: ${child.tagName}, номер: ${i};<br>`);
+            }
+        }
+        task2();
+
+           </script>
+            
+    </div>
+    <br>
+   <div align="center">
+        <table class="table1">
+            <tr>
+                <td><a href="Задание 1-2.html">Task 1-2</a></td>
+                <td><a href="Задание 3-4.html">Task 3-4</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

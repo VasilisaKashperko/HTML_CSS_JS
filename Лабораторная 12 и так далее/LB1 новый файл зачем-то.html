@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая страница</title>
+	 <style type="text/css">
+    body{ 
+     font-family: Arial;
+    background-image: url(фонт.gif); /* Путь к фоновому изображению */
+    background-color: #FF69B4; /* Цвет фона */
+    }
+    a:link {
+    color: #BA55D3; /* не посещенной ссылки */
+   }
+	a:visited{
+	color: #9932CC;
+	}
+	a:hover { /* на которую наведен курсор мыши */
+	color: #FF1493;
+	}
+	a:active {
+		color: #D8BFD8;
+	}
+	li{
+    list-style-type: disc;
+    font-family: Verdana;
+    color:  #BA55D3;
+	}
+    ul {
+    	list-style-image: url(сердце.png);
+    	color: #FF69B4;
+    	text-decoration: underline;
+    	 font-style: italic;
+    }
+    .p1 {
+     color: #9932CC; /* Красный цвет текста */ } <!-- HTML имя цвета --> 
+     font-size: 200em 100ex; <!-- Размер шрифта в процентах --> 
+     font-family: Verdana;
+     font-style: normal;
+     text-align: justify;
+     word-spacing:6px;
+     letter-spacing:0.2em;
+ }
+ 	.p2 { 
+     color: #000000; /*HEX*/
+     font-size: 100%; <!-- Размер шрифта в процентах --> 
+     font-family: Trebuchet MS; 
+     font-style: italic;
+     text-align: left;
+     word-spacing:2px;
+     letter-spacing:1px;
+    }
+    .p3 { 
+     color: 0, 0, 0;  /*RGB*/
+     font-size: 15px;
+     font-family: COMIC SANS MS;
+     font-style: oblique;
+     text-align: right;
+     word-spacing:20px;
+     letter-spacing:0.4px;
+    }
+     #ident1 { 
+    color: #1E90FF;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Trebuchet MS; 
+    font-weight: 600;
+    }
+     #ident2 { 
+    color: #C71585;
+    text-decoration: line-through;
+    font-style: oblique;
+    font-family: COMIC SANS MS;
+    font-weight: 800;
+    }
+    .table{
+    	text-align: center;
+    	vertical-align: middle;
+    	border: 4px double pink;
+    	border-collapse: collapse;
+    	padding: 20px; /* Поля вокруг текста */
+    }
+    .th { 
+    text-align: left; /* Выравнивание по левому краю */
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid pink; /* Граница вокруг ячеек */
+    color: black; <!-- HTML имя цвета --> 
+   	}
+   	.td { 
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid pink; /* Граница вокруг ячеек */
+   	}
+    p:first-line {
+	color: #FF00FF;
+    text-decoration: underline;
+    font-style: italic;
+    }
+    p:first-letter{
+    	color: #FF00FF;
+    text-decoration: underline;
+    font-style: italic;
+    }
+    p:first-child {
+     color: #9932CC;
+    }
+    p:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: #DA70D6; /* Красный цвет текста */
+    border: 3px solid;
+	}
+	a:before{
+		content:" студентка 1 курса, ";
+	}
+	a:after{
+		content:", проживаящая по некоторому адресу";
+	}
+/*С помощью псевдоклассов в CSS можно устанавливать стиль для уже существующих элементов веб-страницы, который будет применяться в случае каких-то действий пользователя. Псевдоэлементы же отличаются тем, что могут определять стиль несуществующего содержимого, а также четко не обозначенных элементов.*/
+  </style> 
+  <link rel="stylesheet" type="text/css" href = "h1h2h3span.css">
+</head>
+<body>
+	<table width = 75% align = center bgcolor="#FFFAFA">
+		<tr>
+			<td>
+
+<h1 align="center"><font face="Palatino Linotype">Я, <a href="LB2.html">Кашперко Василиса Сергеевна</a>, изучаю <font color=#FF1493>HTML</font> и CSS</font></h1>
+
+<h2 align="center"><img src="nRm.gif" width = 20% align="left" vspace="2" hspace="2"><i><font face="Palatino Linotype">Краткая история</font></i><img src="nRm.gif" width = 20% align="right" vspace="2" hspace="2"></h2>
+
+<span style="color: #800080"><h3 align="center">Детство</h3></span>
+<p class="p1">&#8195;&#8195;<span style="color: #800080">Х</span>одила во множество секций в детстве: на пение, фигурное катание, бально-спортивные танцы, бассейн, английский. Мне это все очень нравилось. Каждый день смотрю на своего младшего брата и на секунду хочу вернуться в тот возраст :)</font></p>
+
+<span><h3 align="center">Отрочество</h3></span>
+<p class="p2">&#8195;&#8195;<span id="ident1">П</span>озже пришлось выбирать между увлечениями и всю свою уже осознанную жизнь предпочла отдать музыкальной школе , бассейну и английскому языку. К концу 9 класса все мои одноклассники уже знали, куда поступать, одна я металась, потому что не знала, что больше всего я хотела бы делать в жизни... Мне очень нравилось петь, рисовать, учиться писать сайты на информатике еще с 10 класса, готовить. Я рассматривала варианты: идти на переводчика, маркетолога, веб-дизайнера, кулинара, архитектора. Подумав: 1) хорошо с математикой, 2) хорошо рисую, 3) хорошее воображение...-иду!</font></p>
+
+<span><h3 align="center">Юность</h3></span>
+<p class="p3">&#8195;&#8195;<span id="ident2">З</span>везды сошлись на том, что я решила подать документы на архитектуру, где после внутреннего экзамена по рисунку мне не хватило 1 балла для поступления на бюджет. Платное образование я не рассматривала, хотя родители готовы были оплачивать. Моим самым крутым решением стало вот что: пойти на год получить профессию парикмахера. Стипуха 120 рублей плюс зарплата, классная компания и одно из любимых дел сделали за этот год из меня человека. Я ощутила вкус жизни, прелесть отдыха и работы одновременно. Считаю, что каждому ребенку после 11 класса действительно нужен такой год на "подумать, решить", получить работу, с которой никогда не пропадешь нигде. Многие мои друзья спустя год обучения "не на той специальности" забрали документы. Я знала, куда я хочу пойти в этот раз. Это было точно, я была уверена. И сейчас я нахожусь на своем единственно правильном пути. На большом перспективном пути, где в конце меня ожидает моя жизнь с двумя собаками: большой самоедской лайкой и маленьким белым той-шпиццем и кошкой.</font></p>
+<span><h2 align = center>Список с любым содержимым</h2></span>
+<table align = center>
+	<tr>
+		<td>
+<OL>
+	<LI>Элемент 1
+		<UL type = disc>
+			<LI>
+				Еж
+			</LI>
+			<LI>
+				Лиса
+			</LI>
+		</UL>
+	</LI>
+	<LI>Элемент 2
+		<UL type = square>
+			<LI>
+		Змея
+			</LI>
+			<LI>
+				Еж
+			</LI>
+		</UL>
+	</LI>
+	<LI>Элемент 3
+		<UL type = circle>
+			<LI>
+		Олень
+			</LI>
+			<LI>
+				Морская звезда
+			</LI>
+		</UL>
+	</LI>
+</OL>
+</td></tr></table>
+<span><h2 align = center>Таблица</h2></span>
+<table class="table">
+	<tr class="tr">
+		<td align = center class="td">ФИО</td>
+		<td colspan = 3 align = center class="td"><a href="LB2.html">Иванов Иван Иванович</a></td>
+	</tr>
+	<tr class="tr">
+		<td width=10%><img src="кот.jpg" width=100%></td>
+		<td class="td" colspan = 3 align = center>Адрес: ул.Белорусская, д.5, ком.430</td>
+	</tr>
+	<tr class="tr">
+		<td class="td" rowspan = 6 align = center>1 семестр 2016/2017 уч.года</td>
+		<th class="td">Дата</th>
+		<th class="td">Предмет</th>
+		<th class="td">Оценка</th>
+	</tr>
+	<tr class="tr">
+		<td class="td">31.12.2016</td>
+		<td class="td">ОАиП</td>
+		<td class="td">6</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">05.01.2017</td>
+		<td class="td">Физика</td>
+		<td class="td">9</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">11.01.2017</td>
+		<td class="td">ОИТ</td>
+		<td class="td">4</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">16.01.2017</td>
+		<td class="td">Математика</td>
+		<td class="td">6</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">22.01.2017</td>
+		<td class="td">АЛОЦВМ</td>
+		<td class="td">8</td>
+	</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
